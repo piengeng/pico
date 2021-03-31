@@ -1,7 +1,7 @@
 from machine import ADC
 import utime
 
-conversion_factor = 3.3 / 65536  # 2**16 / 2<<15
+conversion_factor = 3.3 / 65535  # 2**16 - 1 / 2<<15 - 1
 offset = 7.30 + 27
 
 
